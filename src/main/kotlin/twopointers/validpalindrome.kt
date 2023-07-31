@@ -22,8 +22,8 @@ Explanation: "amanaplanacanalpanama" is a palindrome.
  */
 
 fun validPalindrome(s : String) : Boolean {
-    var cleanString = s.lowercase().replace(Regex("[^a-zA-Z]"),"")
-    var reverseString = cleanString.reversed()
+    val cleanString = s.lowercase().replace(Regex("[^a-zA-Z]"),"")
+    val reverseString = cleanString.reversed()
     return cleanString.equals(reverseString)
 }
 fun main() {
